@@ -1,6 +1,6 @@
 steps:
 # Install dependencies
-    - name: "node"
+    - name: "gcr.io/cloud-builders/npm"
       args: ['install']
 # Run custom commands
     - name: "node"

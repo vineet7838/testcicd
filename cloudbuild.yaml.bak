@@ -1,9 +1,9 @@
 steps:
 # Install dependencies
-    - name: "gcr.io/cloud-builders/npm"
+    - name: "gcr.io/cloud-builders/npm:node-12.10.0"
       args: ['install']
 # Run custom commands
-    - name: "node"
+    - name: "gcr.io/cloud-builders/npm:node-12.10.0"
       args: ['run', 'build']
 
 # Deploy to google cloud app engine
